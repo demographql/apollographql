@@ -1,0 +1,38 @@
+{
+  "homepage": "http://aravindg16.github.io/aiesec-graphql",
+  "name": "aiesec-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index",
+    "fix": "npx prettier src/**/*.js --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "aiesec-graphql -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-datasource-rest": "0.3.2",
+    "apollo-datasource": "0.3.1",
+    "apollo-errors": "1.9.0",
+    "apollo-resolvers": "1.4.1",
+    "apollo-server": "2.4.8",
+    "apollo-server-caching": "0.3.1",
+    "apollo-server-express": "2.4.8",
+    "graphql-tools": "4.0.4",
+    "@graphql-modules/core": "0.7.0",
+    "@graphql-modules/epoxy": "0.4.0",
+    "@graphql-modules/sonar": "0.4.0",
+    "@graphql-modules/di": "0.7.0",
+    "@graphql-modules/utils": "0.4.0",
+    "express": "4.16.4",
+    "graphql": "^14.2.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "prettier": "1.16.4"
+  }
+}
